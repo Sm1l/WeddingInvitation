@@ -1,0 +1,149 @@
+.section {
+  padding: 150px 24px;
+  background: var(--paper);
+}
+
+.inner {
+  width: min(850px, 100%);
+  margin: auto;
+  text-align: center;
+}
+
+.label {
+  margin: 0 0 20px;
+
+  color: var(--burgundy);
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(50px, 7vw, 80px);
+  font-weight: 500;
+  color: var(--green);
+}
+
+.timeline {
+  position: relative;
+
+  margin-top: 90px;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 75px;
+
+  width: 1px;
+
+  background: rgba(114, 47, 56, 0.15);
+}
+
+.progress {
+  width: 100%;
+  background: var(--orange);
+}
+
+.leaf {
+  position: absolute;
+  left: -14px;
+
+  transform: translateY(-50%);
+
+  font-size: 27px;
+
+  transition: top 0.08s linear;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
+
+.event {
+  position: relative;
+
+  min-height: 90px;
+
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.dot {
+  position: absolute;
+  top: 9px;
+  left: 69px;
+
+  width: 13px;
+  height: 13px;
+
+  border-radius: 50%;
+
+  background: var(--burgundy);
+
+  box-shadow: 0 0 0 7px var(--paper);
+}
+
+.eventContent {
+  grid-column: 2;
+}
+
+.eventContent span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 27px;
+  color: var(--orange);
+}
+
+.eventContent h3 {
+  margin: 3px 0 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  font-weight: 600;
+
+  color: var(--green);
+}
+
+.eventContent p {
+  margin: 3px 0 0;
+
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 100px 22px;
+  }
+
+  .timeline {
+    margin-top: 60px;
+  }
+
+  .line {
+    left: 10px;
+  }
+
+  .event {
+    display: block;
+    padding-left: 50px;
+  }
+
+  .dot {
+    left: 4px;
+  }
+
+  .eventContent h3 {
+    font-size: 28px;
+  }
+
+  .eventContent span {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,34 @@
+.app {
+  overflow: hidden;
+}
+
+.footer {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  background: #293b2f;
+  color: #f5ead8;
+
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(28px, 4vw, 48px);
+}
+
+.footer span {
+  font-size: 13px;
+  letter-spacing: 0.25em;
+  opacity: 0.65;
+}
+
+.footerLeaf {
+  font-size: 28px;
+  color: #d68b35;
+}

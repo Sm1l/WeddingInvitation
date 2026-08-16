@@ -1,0 +1,137 @@
+.section {
+  padding: 150px 24px;
+
+  background: var(--paper);
+}
+
+.inner {
+  width: min(760px, 100%);
+  margin: auto;
+
+  text-align: center;
+}
+
+.decor {
+  margin-bottom: 30px;
+
+  color: var(--orange);
+  font-size: 24px;
+}
+
+.label {
+  margin: 0 0 20px;
+
+  color: var(--burgundy);
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(42px, 6vw, 70px);
+  font-weight: 500;
+  line-height: 0.95;
+  color: var(--green);
+}
+
+.text {
+  max-width: 620px;
+  margin: 30px auto 0;
+
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.text strong {
+  color: var(--text);
+}
+
+.divider {
+  margin: 80px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  color: var(--orange);
+}
+
+.divider span {
+  width: 80px;
+  height: 1px;
+  background: rgba(41, 59, 47, 0.2);
+}
+
+.registration,
+.gifts {
+  max-width: 580px;
+  margin: auto;
+}
+
+.registration h3,
+.gifts h3 {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--green);
+}
+
+.registration p:not(.label),
+.gifts p:not(.label) {
+  margin: 20px auto 0;
+
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.registration address {
+  margin-top: 20px;
+
+  font-style: normal;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+
+  color: var(--burgundy);
+}
+
+.wineCard {
+  margin: 35px auto;
+  padding: 25px;
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+
+  border: 1px solid rgba(114, 47, 56, 0.25);
+
+  background: #f3e5d0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
+  color: var(--burgundy);
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 100px 22px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .wineCard {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
