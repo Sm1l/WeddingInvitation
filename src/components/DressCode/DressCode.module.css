@@ -14,7 +14,7 @@
 .label {
   margin: 0 0 20px;
 
-  color: #d68b35;
+  color: #d6a72c;
 
   font-size: 11px;
   text-transform: uppercase;
@@ -27,6 +27,7 @@ h2 {
   font-family: "Cormorant Garamond", serif;
   font-size: clamp(50px, 7vw, 80px);
   font-weight: 500;
+  color: #d68b35 !important;
 }
 
 .description {
